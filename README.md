@@ -110,4 +110,4 @@ The application is built using a **Modular Prompt Injection** architecture.
 
 ---
 
-**Created by Team Descenders**
+**Created by Laki-Pop**
