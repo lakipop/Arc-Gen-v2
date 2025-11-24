@@ -1,0 +1,9 @@
+{
+  "name": "Interactive Architecture Generator V1",
+  "description": "Generate professional, high-tech system architecture diagrams and detailed technical flowcharts from any text or image input.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ]
+}
