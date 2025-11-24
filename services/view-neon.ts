@@ -127,7 +127,7 @@ const STYLE_NEON_LOGIC = `
       stroke-dasharray: 10, 5; /* Tighter dash for speed illusion */
       /* Double drop-shadow for intense neon neon glow */
       filter: drop-shadow(0 0 6px currentColor) drop-shadow(0 0 15px currentColor);
-      animation: flowAnimation 8s linear infinite; /* Smoother, slower active speed */
+      animation: flowAnimation 60s linear infinite; /* Very slow active speed */
       z-index: 10;
   }
   
@@ -250,7 +250,7 @@ export const NEON_CONFIG = {
     js: NEON_JS_ENGINE,
     container: `<div class="neon-layout"><svg id="neon-svg"></svg></div><div id="neon-info-modal" class="neon-modal"><span class="modal-close">&times;</span><h2 id="modal-title" style="color:var(--accent-cyan); margin-top:0;">Title</h2><div id="modal-body" style="color:var(--text-muted); font-size:0.9rem;"></div></div>`,
     promptInfo: `NEON FLOW: Create a compact 'neon-layout' with 3-4 'neon-col' elements. Ensure components have 'neon-node' class with 'id' and 'data-info'. 
-    Keep text concise.
+    Each node must contain a short title (h3) and a more detailed description (p). The data-info attribute should contain comprehensive details for the popup modal.
     Define connections in a 'neonConnections' array (JSON) with fields: from, to, type (solid/dashed), colorType (primary/secondary).
     Use 'solid' type for main flows.`
 };
