@@ -19,12 +19,15 @@ const STYLE_COMPONENT_VIEW = `
       background: var(--bg-panel);
       border: var(--border-width) solid var(--border-color);
       border-radius: 12px;
-      padding: 20px;
+      padding: 15px;
       position: relative;
       overflow: hidden;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
       box-shadow: var(--node-shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
   }
   
   .bento-card:hover {
@@ -49,35 +52,35 @@ const STYLE_COMPONENT_VIEW = `
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
   }
   
   .bento-icon {
-      width: 36px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
       background: rgba(34, 211, 238, 0.1);
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: var(--accent-cyan);
       font-weight: bold;
   }
   
   .bento-card h3 {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 700;
       color: var(--text-main);
-      font-family: 'JetBrains Mono';
+      font-family: 'Inter', sans-serif;
   }
   
   .bento-card p {
       margin: 10px 0 0 0;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
-      line-height: 1.6;
+      line-height: 1.5;
   }
   
   .bento-meta {
@@ -158,5 +161,5 @@ export const COMPONENT_CONFIG = {
     css: STYLE_COMPONENT_VIEW,
     js: COMPONENT_VIEW_JS_ENGINE,
     container: `<div class="bento-grid"></div>`,
-    promptInfo: `COMPONENT VIEW: Create bento-grid with bento-card (sizes: bento-large/wide/tall, colors: bento-primary/secondary/tertiary/accent).`
+    promptInfo: `COMPONENT VIEW: Create a compact and detailed bento-grid with bento-card. Use various sizes (bento-large/wide/tall) and colors (bento-primary/secondary/tertiary/accent). Each card should have a title and a detailed description, and the component must fit the text size.`
 };

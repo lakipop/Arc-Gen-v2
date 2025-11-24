@@ -80,18 +80,18 @@ const STYLE_CYBERPUNK = `
       background: #09090b; /* Very dark zinc */
       border: 1px solid #27272a;
       border-radius: 8px; /* Slightly rounded */
-      padding: 15px 20px; /* Compact padding */
-      width: 240px; /* Reduced width */
+      padding: 20px;
+      width: 260px;
       position: relative;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-      transition: all 0.3s ease;
+      transition: all 0.4s ease;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 8px;
   }
 
   .cyber-node:hover {
-      transform: translateY(-4px);
+      transform: translateY(-5px);
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7);
       border-color: #52525b;
       z-index: 10;
@@ -332,6 +332,6 @@ export const MODERN_CONFIG = {
     5. **Connections**:
        - Generate a JSON array \`cyberConnections\` = [{from: 'id', to: 'id', color: 'cyan'}].
        - Use 'purple' for ingestion flows, 'cyan' for internal flows, 'gold' for outputs.
-    6. **GROUNDING**: content MUST be based on the user's prompt (e.g., if they ask for a Chat App, do NOT show StatsBomb or MySQL unless relevant).
+    6. **GROUNDING**: content MUST be based on the user's prompt (e.g., if they ask for a Chat App, do NOT show StatsBomb or MySQL unless relevant). Ensure the diagram is fully detailed and the animations are smooth.
     `
 };
