@@ -127,7 +127,7 @@ const STYLE_NEON_LOGIC = `
       stroke-dasharray: 10, 5; /* Tighter dash for speed illusion */
       /* Double drop-shadow for intense neon neon glow */
       filter: drop-shadow(0 0 6px currentColor) drop-shadow(0 0 15px currentColor);
-      animation: flowAnimation 3s linear infinite; /* Smooth active speed (adjusted from 0.8s) */
+      animation: flowAnimation 8s linear infinite; /* Smoother, slower active speed */
       z-index: 10;
   }
   

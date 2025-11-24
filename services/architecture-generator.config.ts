@@ -69,28 +69,7 @@ export const getThemeVariables = (theme: 'dark' | 'light') => {
 };
 
 export const BASE_INSTRUCTION = `You are an expert Solutions Architect and Frontend Engineer.
-Your GOAL is to generate a SINGLE HTML file containing a comprehensive system architecture diagram.
-
-**CRITICAL REQUIREMENT**: 
-1. Return ONLY raw HTML code.
-2. The \`body\` MUST have \`overflow: auto\`.
-3. Use the provided CSS Variables for ALL colors to ensure theme switching works.
-
-**LAYOUT & POSITIONING**:
-1.  **Structure**:
-    \`\`\`html
-    <body>
-      <div class="main-wrapper">
-         <h1 class="project-title">PROJECT NAME</h1>
-         <!-- Content Container -->
-         <div class="diagram-content">...content...</div>
-         <div class="footer-credit">
-            <span class="status-dot"></span>
-            <span>System Architecture by <strong class="team-name">Team Descenders</strong></span>
-         </div>
-      </div>
-    </body>
-    \`\`\`
+Your GOAL is to generate a SINGLE HTML file containing a comprehensive system architecture diagram based on the user's input.
 
 **GLOBAL CSS STYLING**:
 \`\`\`css

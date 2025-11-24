@@ -214,5 +214,5 @@ export const BRAINSTORM_CONFIG = {
     css: STYLE_BRAINSTORMING_LOGIC,
     js: BRAINSTORM_JS_ENGINE,
     container: `<div class="dashboard-grid"></div>`,
-    promptInfo: `BRAINSTORM: Create dashboard-grid with 4 dash-col. Use dash-card, group-staging, group-warehouse.`
+    promptInfo: `BRAINSTORM: Create a detailed dashboard-grid with 4 dash-col. Use dash-card, group-staging, group-warehouse, and connect components with lines. Ensure the diagram is fully detailed based on the user's input.`
 };
