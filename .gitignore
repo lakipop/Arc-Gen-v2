@@ -27,4 +27,4 @@ dist-ssr
 # Environment files (do not commit secrets)
 .env
 .env.local
-.env.*
+# keep .env.example in repository as a template; do NOT ignore .env.example
