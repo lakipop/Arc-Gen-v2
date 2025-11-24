@@ -57,7 +57,7 @@ export const InputArea: React.FC<InputAreaProps> = ({ onGenerate, isGenerating, 
     },
     { 
         id: 'brainstorming', 
-        label: 'Dashboard', 
+        label: 'Brainstorm', 
         desc: 'Strategic Analysis',
         // Active: Purple theme
         activeClass: 'bg-purple-500/10 border-purple-500 text-purple-600 dark:text-purple-400 shadow-[0_0_15px_rgba(168,85,247,0.15)] ring-1 ring-purple-500/50' 
