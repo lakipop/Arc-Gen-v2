@@ -28,6 +28,36 @@ const STYLE_COMPONENT_VIEW = `
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      height: fit-content;
+  }
+  
+  .bento-group {
+      border: 2px dashed var(--accent-gold);
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      margin-top: 10px;
+      background: rgba(250, 204, 21, 0.02);
+      transition: all 0.3s;
+  }
+  
+  .bento-group:hover {
+      background: rgba(250, 204, 21, 0.05);
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 20px rgba(250, 204, 21, 0.1);
+  }
+  
+  .bento-group-label { 
+      position: absolute; 
+      top: -12px; 
+      left: 15px; 
+      background: var(--bg-main); 
+      padding: 2px 10px; 
+      color: var(--accent-gold); 
+      font-size: 0.7rem; 
+      font-weight: bold;
+      border-radius: 4px;
+      border: 1px solid var(--accent-gold);
   }
   
   .bento-card:hover {
@@ -161,5 +191,5 @@ export const COMPONENT_CONFIG = {
     css: STYLE_COMPONENT_VIEW,
     js: COMPONENT_VIEW_JS_ENGINE,
     container: `<div class="bento-grid"></div>`,
-    promptInfo: `COMPONENT VIEW: Create a compact and detailed bento-grid with bento-card. Use various sizes (bento-large/wide/tall) and colors (bento-primary/secondary/tertiary/accent). Each card should have a title and a detailed description, and the component must fit the text size.`
+    promptInfo: `COMPONENT VIEW: Create a compact and detailed bento-grid with bento-card. Use various sizes (bento-large/wide/tall) and colors (bento-primary/secondary/tertiary/accent). Each card should have a title and a detailed description, and the component must fit the text size. Use bento-group to group related components.`
 };
