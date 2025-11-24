@@ -53,6 +53,35 @@ const STYLE_NEON_LOGIC = `
       font-family: 'JetBrains Mono'; color: var(--text-muted); letter-spacing: 3px; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 20px; 
       border-bottom: 1px solid var(--accent-cyan); padding-bottom: 8px;
       text-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
+      animation: gradient-fade 10s ease-in-out infinite;
+  }
+  
+  @keyframes gradient-fade {
+    0% {
+      border-bottom-color: var(--accent-cyan);
+    }
+    50% {
+      border-bottom-color: var(--accent-purple);
+    }
+    100% {
+      border-bottom-color: var(--accent-cyan);
+    }
+  }
+  
+  .animated {
+    animation: pulse 5s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   
   /* Neon Nodes - Enhanced Style */
@@ -251,6 +280,7 @@ export const NEON_CONFIG = {
     container: `<div class="neon-layout"><svg id="neon-svg"></svg></div><div id="neon-info-modal" class="neon-modal"><span class="modal-close">&times;</span><h2 id="modal-title" style="color:var(--accent-cyan); margin-top:0;">Title</h2><div id="modal-body" style="color:var(--text-muted); font-size:0.9rem;"></div></div>`,
     promptInfo: `NEON FLOW: Create a compact 'neon-layout' with 3-4 'neon-col' elements. Ensure components have 'neon-node' class with 'id' and 'data-info'. 
     Each node must contain a short title (h3) and a more detailed description (p). The data-info attribute should contain comprehensive details for the popup modal.
+    Apply the 'animated' class to the main components to add a subtle animation.
     Define connections in a 'neonConnections' array (JSON) with fields: from, to, type (solid/dashed), colorType (primary/secondary).
     Use 'solid' type for main flows.`
 };

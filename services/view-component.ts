@@ -191,5 +191,5 @@ export const COMPONENT_CONFIG = {
     css: STYLE_COMPONENT_VIEW,
     js: COMPONENT_VIEW_JS_ENGINE,
     container: `<div class="bento-grid"></div>`,
-    promptInfo: `COMPONENT VIEW: Create a compact and detailed bento-grid with bento-card. Use various sizes (bento-large/wide/tall) and colors (bento-primary/secondary/tertiary/accent). Each card should have a title and a detailed description, and the component must fit the text size. Use bento-group to group related components.`
+    promptInfo: `COMPONENT VIEW: Create a compact and detailed bento-grid with bento-card. Use various sizes (bento-large/wide/tall) and colors (bento-primary/secondary/tertiary/accent). Each card should have a title, a detailed description, a deep analysis note, and the component must fit the text size. Use bento-group to group related components.`
 };
