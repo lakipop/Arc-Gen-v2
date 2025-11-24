@@ -228,10 +228,10 @@ export const LivePreview: React.FC<LivePreviewProps> = ({ creation, isLoading, i
                         
                         {/* Terminal-like Output (Decoration) */}
                         <div className="mt-8 p-3 bg-black/40 rounded border border-zinc-800/50 font-mono text-[10px] text-zinc-600 h-24 overflow-hidden flex flex-col justify-end">
-                            <div className="opacity-40">> allocating_resources... OK</div>
-                            <div className="opacity-60">> loading_modules... OK</div>
-                            <div className="opacity-80">> parsing_user_prompt... OK</div>
-                            <div className="text-cyan-500/80">> {stages[loadingStage].detail.toLowerCase().replace(/ /g, '_')}...</div>
+                              <div className="opacity-40">{'>'} allocating_resources... OK</div>
+                              <div className="opacity-60">{'>'} loading_modules... OK</div>
+                              <div className="opacity-80">{'>'} parsing_user_prompt... OK</div>
+                              <div className="text-cyan-500/80">{'>'} {stages[loadingStage].detail.toLowerCase().replace(/ /g, '_')}...</div>
                             <span className="animate-pulse">_</span>
                         </div>
                      </div>

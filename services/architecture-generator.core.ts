@@ -10,7 +10,7 @@ import { COMPONENT_CONFIG } from './view-component';
 import { MODERN_CONFIG } from './view-modern';
 
 const GEMINI_MODEL = 'gemini-3-pro-preview';
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 export async function bringToLife(
   prompt: string, 

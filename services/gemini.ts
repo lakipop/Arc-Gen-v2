@@ -6,7 +6,7 @@ import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
 const GEMINI_MODEL = 'gemini-3-pro-preview';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY as string });
 
 // Dynamic CSS Variables based on theme
 const getThemeVariables = (theme: 'dark' | 'light') => {
